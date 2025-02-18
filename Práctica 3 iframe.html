@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica 3 iframe</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        table {
+            margin: 0 auto; /* Tabla centrada */
+            border: none; /* Quita el borde de la tabla */
+        }
+        td {
+            padding: 8px;
+            border: none;
+        }
+        iframe {
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            margin-top: 100px; /* Espacio superior para el iframe */
+            width: 600px;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center">El sistema solar</h1>
+    </header>
+    <table border="1">
+        <tr>
+            <td><a href="imagenes/tierra.png" target="ventana1"><img src="imagenes/tierra.png" width="100" height="100"></a></td>
+            <td><a href="imagenes/venus.png" target="ventana1"><img src="imagenes/venus.png" width="200" height="100"></a></td>
+            <td><a href="imagenes/neptuno.png" target="ventana1"><img src="imagenes/neptuno.png" width="200" height="100"></a></td>
+            <td><a href="imagenes/jupiter.png" target="ventana1"><img src="imagenes/jupiter.png" width="150" height="100"></a></td>
+        </tr>
+    </table>
+    <iframe src="" name="ventana1"></iframe>
+</body>
+</html>
