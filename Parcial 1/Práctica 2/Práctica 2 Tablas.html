@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ajusta el ancho y escala de la ventana de visualización en dispositivos móviles -->
+    <title>Tablas en HTML</title> <!-- Título de la pestaña del navegador -->
+    <style> 
+        table {
+            /*Línea continua solid
+              Línea punteada dotted
+              Guiones        dashed*/
+            border: 1px solid blue; /* Borde azul sólido */
+            width: auto; /* Ancho automático */
+            margin: auto; /* Centra la tabla horizontalmente */
+            background: fondo.png; /* Imagen de fondo para la tabla */
+            color: black; /* Color del texto */
+        }
+        th, td {
+            border: 1px solid blue; /* Bordes azules para celdas de encabezado y datos */
+            font-family: TimesNewRoman;
+        }
+        th {
+            background: fondo.png; /* Imagen de fondo para celdas de encabezado */
+            color: black; /* Color del texto en el encabezado */
+            text-align: left;
+        }
+        td {
+            line-height: 35%; /* Altura de línea del 35% */
+            padding: 5px; /* Relleno de 5 píxeles en las celdas de datos */
+        }
+    </style>
+</head>
+<body background="fondo.jpg"> <!-- Imagen de fondo para la página -->
+    <h1 style="text-align: center;">Electrónica</h1>
+    <h2 style="text-align: center;">Lista de productos</h2>
+    <table style="border: 2px solid blue;"> <!-- Borde azul sólido -->
+        <thead> 
+            <tr> <!-- Fila del encabezado -->
+                <th style="text-align: center;">Departamento</th>
+                <th style="text-align: center;">Código</th>
+                <th style="text-align: center;">Producto</th>
+                <th style="text-align: center;">Marca</th>
+                <th style="text-align: center;">Precio</th>
+                <th>Oferta especial</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!-- colspan="2" para combinar 2 columnas y rowspan="3" combina 3 filas -->
+                <td rowspan="2">Electrónica</td> <!-- Celda que combina dos filas -->
+                <td>129867</td>
+                <td>TV 40"</td>
+                <td>Samsung</td>
+                <td>$ 5699.00</td>
+                <td>12 MSI</td>
+            </tr>
+            <tr>
+                <td>129832</td>
+                <td>TV 60"</td>
+                <td>Samsung</td>
+                <td>$ 14599.00</td>
+                <td>12 MSI</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Telefonía</td> <!-- Celda que combina tres filas -->
+                <td>129358</td>
+                <td>Smartphone</td>
+                <td>Motorola</td>
+                <td>$ 3697.00</td>
+                <td>13 MSI</td>
+            </tr>
+            <tr>
+                <td>129321</td>
+                <td>Smartphone</td>
+                <td>Samsung Galaxy</td>
+                <td>$ 6997.00</td>
+                <td>6 MSI</td>
+            </tr>
+            <tr>
+                <td>138756</td>
+                <td>Teléfono inalámbrico</td>
+                <td>Motorola</td>
+                <td>$ 578.00</td> 
+                <td>5% pago en efectivo</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Pie de la tabla -->
+            <tr>
+                <td rowspan="2">Computación</td> <!-- Celda que combina dos filas -->
+                <td>129329</td>
+                <td>Impresora</td>
+                <td>HP Ink Tank 115</td>
+                <td>$ 3176.00</td>
+                <td>12 MSI</td>
+            </tr>
+            <tr>
+                <td>127231</td>
+                <td>Mesa para laptop</td>
+                <td>Mainstays</td>
+                <td>$ 999.00</td>
+                <td>6 MSI</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Sólo los mejores productos</h2>
+    <section>
+        <p style="text-align: justify;">
+            Encuentra audífonos, celulares, cámaras, accesorios para celulares, computadoras, tabletas, 
+            artículos de oficina, electrónicos de oficina, instrumentos musicales, drones, cámaras de 
+            seguridad, televisiones y mucho más.
+        </p>
+        <p style="text-align: justify;">
+            Te ofrecemos solo productos de calidad, las mejores marcas, el mejor servicio, la app más 
+            confiable y todas las formas de pago, nuestro objetivo facilitar tu vida con la mejor calidad.
+        </p>
+        <p style="text-align: justify;">
+            Encuentra todo lo que necesita en el mejor lugar.
+        </p>
+    </section>
+    <h2>Nuestras sucursales</h2>
+    <ul type="a">
+        <li>Centro</li> 
+        <li>El Dorado</li>
+        <li>Plaza San Luis</li>
+        <li>Tangamanga</li>
+        <li>Citadella</li>
+        <li>Carranza</li>
+    </ul>
+    <p>
+        <cite>https://super.walmart.com.mx/electronica/cat2910049</cite> <!-- Citación con enlace -->
+    </p>
+</body>
+</html>
