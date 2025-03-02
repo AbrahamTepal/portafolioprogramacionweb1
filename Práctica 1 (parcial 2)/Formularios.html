@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formularios en HTML</title>
+	<style>
+			body{
+				background-color: lightblue;
+			}
+			table{
+				margin: auto; /* Centra la tabla horizontalmente */
+         	   	border-spacing: 60px 0px; /* Añade espacio entre las celdas (horizontal vertical) */
+			}	
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">Volkswagen Potosina</h1>
+	<h2 style="text-align: center;">Compras online</h2>
+	<form action="" method="post" enctype="text/plain">
+		<fieldset><!-- Establece una sección del formulario -->
+			<legend>Información general del cliente</legend><!-- Título de la sección del formulario -->
+			<table class="table-center">
+				<tbody>
+					<tr>
+						<td><label for="cliente">Nombre:</label><!-- El atributo for establece una relación entre la etiqueta y un campo de entrada -->
+						<!-- Ingreso de información en un campo de información -->
+						<!-- readonly sólo leer, no editar campo -->
+						<input type="text" name="cliente" id="cliente"
+						placeholder="Nombre" size="20"
+						maxlength="30" title="Nombre del cliente" required><!-- required para campos obligatorios --></td>
+						<td><br/><label for="apellidop">Apellido paterno:<br/></label>
+						<input type="text" name="apellidop" id="apellidop"
+						placeholder="Apellido paterno" size="20"
+						maxlength="30" title="Apellido paterno"><br/><br/></td>
+						<td><br/><label for="apellidom">Apellido materno:<br/></label>
+						<input type="text" name="apellidom" id="apellidom"
+						placeholder="Apellido materno" size="20"
+						maxlength="30" title="Apellido materno"><br/><br/></td>
+					</tr>
+					<tr>
+						<td><label for="username">Nombre de usuario:<br/></label>
+						<input type="text" name="username" id="username"
+						placeholder="Usuario" size="20"
+						maxlength="30" title="Nombre de usuario" required><br/></td>
+						<td><label for="pass">Password:</label>
+						<input type="password" name="pass" id="pass" size="20" maxlength="20" placeholder="Password" title="Password"required><br/><br/></td>
+						<td><label for="fechareg">Fecha de registro:</label>
+						<input type="date" name="fechareg" id="fechareg"><br/><br/></td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos para facturar</legend><br/>
+			<table class="table-center">
+				<tbody>
+					<tr>
+						<td><label for="pais">País:<br/></label>
+						<select name="pais" id="pais">
+            <option value="AF">Afganistán</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Argelia</option>
+            <option value="AS">Samoa Americana</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AI">Anguila</option>
+            <option value="AQ">Antártida</option>
+            <option value="AG">Antigua y Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaiyán</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Baréin</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BB">Barbados</option>
+            <option value="BY">Bielorrusia</option>
+            <option value="BE">Bélgica</option>
+            <option value="BZ">Belice</option>
+            <option value="BJ">Benín</option>
+            <option value="BM">Bermudas</option>
+            <option value="BT">Bután</option>
+            <option value="BO">Bolivia</option>
+            <option value="BA">Bosnia y Herzegovina</option>
+            <option value="BW">Botsuana</option>
+            <option value="BR">Brasil</option>
+            <option value="BN">Brunéi</option>
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="BI">Burundi</option>
+            <option value="CV">Cabo Verde</option>
+            <option value="KH">Camboya</option>
+            <option value="CM">Camerún</option>
+            <option value="CA">Canadá</option>
+            <option value="KY">Islas Caimán</option>
+            <option value="CF">República Centroafricana</option>
+            <option value="TD">Chad</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CO">Colombia</option>
+            <option value="KM">Comoras</option>
+            <option value="CG">República del Congo</option>
+            <option value="CR">Costa Rica</option>
+            <option value="HR">Croacia</option>
+            <option value="CU">Cuba</option>
+            <option value="CY">Chipre</option>
+            <option value="CZ">Chequia</option>
+            <option value="DK">Dinamarca</option>
+            <option value="DJ">Yibuti</option>
+            <option value="DM">Dominica</option>
+            <option value="DO">República Dominicana</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egipto</option>
+            <option value="SV">El Salvador</option>
+            <option value="GQ">Guinea Ecuatorial</option>
+            <option value="ER">Eritrea</option>
+            <option value="EE">Estonia</option>
+            <option value="SZ">Esuatini</option>
+            <option value="ET">Etiopía</option>
+            <option value="FJ">Fiyi</option>
+            <option value="FI">Finlandia</option>
+            <option value="FR">Francia</option>
+            <option value="GA">Gabón</option>
+            <option value="GM">Gambia</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Alemania</option>
+            <option value="GH">Ghana</option>
+            <option value="GR">Grecia</option>
+            <option value="GD">Granada</option>
+            <option value="GT">Guatemala</option>
+            <option value="GN">Guinea</option>
+            <option value="GW">Guinea-Bisáu</option>
+            <option value="GY">Guyana</option>
+            <option value="HT">Haití</option>
+            <option value="HN">Honduras</option>
+            <option value="HU">Hungría</option>
+            <option value="IS">Islandia</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Irán</option>
+            <option value="IQ">Irak</option>
+            <option value="IE">Irlanda</option>
+            <option value="IL">Israel</option>
+            <option value="IT">Italia</option>
+            <option value="JM">Jamaica</option>
+            <option value="JP">Japón</option>
+            <option value="JO">Jordania</option>
+            <option value="KZ">Kazajistán</option>
+            <option value="KE">Kenia</option>
+            <option value="KI">Kiribati</option>
+            <option value="KP">Corea del Norte</option>
+            <option value="KR">Corea del Sur</option>
+            <option value="KW">Kuwait</option>
+            <option value="KG">Kirguistán</option>
+            <option value="LA">Laos</option>
+            <option value="LV">Letonia</option>
+            <option value="LB">Líbano</option>
+            <option value="LS">Lesoto</option>
+            <option value="LR">Liberia</option>
+            <option value="LY">Libia</option>
+            <option value="LI">Liechtenstein</option>
+            <option value="LT">Lituania</option>
+            <option value="LU">Luxemburgo</option>
+            <option value="MG">Madagascar</option>
+            <option value="MW">Malaui</option>
+            <option value="MY">Malasia</option>
+            <option value="MV">Maldivas</option>
+            <option value="ML">Malí</option>
+            <option value="MT">Malta</option>
+            <option value="MH">Islas Marshall</option>
+            <option value="MR">Mauritania</option>
+            <option value="MU">Mauricio</option>
+            <option value="MX">México</option>
+            <option value="FM">Micronesia</option>
+            <option value="MD">Moldavia</option>
+            <option value="MC">Mónaco</option>
+            <option value="MN">Mongolia</option>
+            <option value="ME">Montenegro</option>
+            <option value="MA">Marruecos</option>
+            <option value="MZ">Mozambique</option>
+            <option value="MM">Birmania</option>
+            <option value="NA">Namibia</option>
+            <option value="NR">Nauru</option>
+            <option value="NP">Nepal</option>
+            <option value="NL">Países Bajos</option>
+            <option value="NZ">Nueva Zelanda</option>
+            <option value="NI">Nicaragua</option>
+            <option value="NE">Níger</option>
+            <option value="NG">Nigeria</option>
+            <option value="NO">Noruega</option>
+            <option value="OM">Omán</option>
+            <option value="PK">Pakistán</option>
+            <option value="PW">Palaos</option>
+            <option value="PA">Panamá</option>
+            <option value="PG">Papúa Nueva Guinea</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Perú</option>
+            <option value="PH">Filipinas</option>
+            <option value="PL">Polonia</option>
+            <option value="PT">Portugal</option>
+            <option value="QA">Catar</option>
+            <option value="RO">Rumanía</option>
+            <option value="RU">Rusia</option>
+            <option value="RW">Ruanda</option>
+            <option value="LC">Santa Lucía</option>
+        				</select></td>
+        				<td><label for="ciudad">Ciudad:<br/></label>
+			<select name="ciudad" id="ciudad">
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Cancún">Cancún</option>
+            <option value="Celaya">Celaya</option>
+            <option value="Chetumal">Chetumal</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="Ciudad Juárez">Ciudad Juárez</option>
+            <option value="Ciudad Victoria">Ciudad Victoria</option>
+            <option value="Coatzacoalcos">Coatzacoalcos</option>
+            <option value="Colima">Colima</option>
+            <option value="Culiacán">Culiacán</option>
+            <option value="Durango">Durango</option>
+            <option value="Ensenada">Ensenada</option>
+            <option value="Guadalajara">Guadalajara</option>
+            <option value="Guaymas">Guaymas</option>
+            <option value="Hermosillo">Hermosillo</option>
+            <option value="Irapuato">Irapuato</option>
+            <option value="La Paz">La Paz</option>
+            <option value="León">León</option>
+            <option value="Los Mochis">Los Mochis</option>
+            <option value="Manzanillo">Manzanillo</option>
+            <option value="Matamoros">Matamoros</option>
+            <option value="Mazatlán">Mazatlán</option>
+            <option value="Mérida">Mérida</option>
+            <option value="Mexicali">Mexicali</option>
+            <option value="Monterrey">Monterrey</option>
+            <option value="Morelia">Morelia</option>
+            <option value="Nogales">Nogales</option>
+            <option value="Nuevo Laredo">Nuevo Laredo</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Pachuca">Pachuca</option>
+            <option value="Piedras Negras">Piedras Negras</option>
+            <option value="Playa del Carmen">Playa del Carmen</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Puerto Vallarta">Puerto Vallarta</option>
+            <option value="Querétaro">Querétaro</option>
+            <option value="Reynosa">Reynosa</option>
+            <option value="Saltillo">Saltillo</option>
+            <option value="San Luis Potosí">San Luis Potosí</option>
+            <option value="Tampico">Tampico</option>
+            <option value="Tepic">Tepic</option>
+            <option value="Tijuana">Tijuana</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Torreón">Torreón</option>
+            <option value="Tuxtla Gutiérrez">Tuxtla Gutiérrez</option>
+            <option value="Veracruz">Veracruz</option>
+            <option value="Villahermosa">Villahermosa</option>
+            <option value="Zacatecas">Zacatecas</option>
+            <option value="Apatzingán">Apatzingán</option>
+            <option value="Tapachula">Tapachula</option>
+        				</select></td>
+        				<td><label for="calle">Calle:<br/></label>
+						<input type="text" name="calle" id="calle"
+						placeholder="Calle" size="20"
+						maxlength="30" title="Calle"><br/></td>
+        			</tr>
+        			<tr>
+        			<td><br/><label for="numcasa">Número de casa:<br/></label>
+					<input type="number" name="numcasa" id="numcasa" placeholder="Número exterior" title="Número de casa"><br/><br/></td>
+					<td><label for="col">Colonia:<br/></label>
+					<input type="text" name="col" id="col"
+					placeholder="Colonia" size="20"
+					maxlength="30" title="Colonia"><br/></td>
+					<td><br/><label for="correo">E-mail:<br/></label>
+					<input type="email" name="correo" id="correo" placeholder="E-mail" title="E-mail" required><br/><br/></td>
+					</tr>
+					<tr>
+					<td><label for="rfc">R.F.C.:<br/></label>
+					<input type="text" name="rfc" id="rfc" placeholder="R.F.C." title="R.F.C." required><br/><br/></td>
+					<td><label for="cp">C.P.:<br/></label>
+					<input type="text" name="cp" id="cp" placeholder="Código postal" title="C.P."><br/><br/></td>
+					<td><input type="checkbox" name="terminos" id="termi" value="1">
+					<label for="terminos">Acepto términos y condiciones</label><br/>
+					<input type="submit" name="enviar" id="enviar" value="Enviar">
+					<input type="reset" value="Restablecer"></td>
+					</tr>
+        		</tbody>
+        	</table>
+
+		</fieldset>
+	</form>
+	<h3 style="text-align: right;">Febrero 2025, SLP.</h3>
+</body>
+</html>
