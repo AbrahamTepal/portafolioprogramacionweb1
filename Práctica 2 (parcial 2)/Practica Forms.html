@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- Formularios -->
+<html>
+<head>   
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title> Formularios </title>
+<style>
+	body{
+		background-color: lightgray;
+		font-family: arial;
+		color: white;
+	}
+	h1{
+		background-color: gray;
+		text-align: right;
+		color: white;/*Color del texto*/
+		padding: 14px;/*Espaciado entre el borde y el contenido*/
+	}
+	div{
+		width: 80%;
+		margin: auto;/*Centra el div*/
+		background-color: darkred;
+	}
+	input[type=text]{/*Para todos los input de tipo texto*/
+		width: 100%;/*En relación al elemento que lo contiene (div en este caso)*/
+		border: 2px solid lightgray;
+		border-radius: 4px;/*Para un borde redondeado en los campos de información*/
+		padding: 12px;
+		margin: 6px;
+		box-sizing: border-box;/*Evita que los campos se salgan del ancho del div al incluir padding, border, etc.*/
+	}
+	input[type=password]{
+		width: 100%;/*En relación al elemento que lo contiene (div en este caso)*/
+		border: 2px solid lightgray;
+		border-radius: 4px;/*Para un borde redondeado en los campos de información*/
+		padding: 12px;
+		margin: 6px;
+		box-sizing: border-box;/*Evita que los campos se salgan del ancho del div al incluir padding, border, etc.*/
+	}
+	input[type=password]:focus{/*Cuando el cursor está dentro de los campos se aplican estos cambios*/
+		width: 100%;/*En relación al elemento que lo contiene (div en este caso)*/
+		border: 2px solid lightgray;
+		border-radius: 4px;/*Para un borde redondeado en los campos de información*/
+		padding: 12px;
+		margin: 6px;
+		box-sizing: border-box;/*Evita que los campos se salgan del ancho del div al incluir padding, border, etc.*/
+		background-color: gray;
+		color: white;
+	}
+	input[type=submit]{
+		width: 100%;/*Ancho del botón de enviar datos*/
+		padding: 16px;
+		border: 4px solid white;
+		font-size: 16px;
+		margin: 4px;
+		border-radius: 4px;
+	}
+	input[type=submit]:hover{/*Al pasar el cursor por encima*/
+		width: 100%;/*Ancho del botón de enviar datos*/
+		padding: 16px;
+		border: 4px solid black;
+		background-color: darkgray;
+		color: white;
+		font-size: 16px;
+		margin: 4px;
+		border-radius: 4px;
+		cursor: pointer;/*Cambia la forma del cursor a una manita*/
+	}
+	input[type=reset]{
+		width: 100%;/*Ancho del botón reset*/
+		padding: 16px;
+		border: 4px solid white;
+		font-size: 16px;
+		margin: 4px;
+		border-radius: 4px;
+	}
+	input[type=reset]:hover{/*Al pasar el cursor por encima*/
+		width: 100%;/*Ancho del botón de enviar datos*/
+		padding: 16px;
+		border: 4px solid black;
+		background-color: darkgray;
+		color: white;
+		font-size: 16px;
+		margin: 4px;
+		border-radius: 4px;
+		cursor: pointer;/*Cambia la forma del cursor a una manita*/
+	}
+	input[type=url]{/*Para el campo sitio web con la imagen de la lupa*/
+		width: 25%;
+		border: 4px solid lightgray;
+		border-radius: 4px;
+		padding: 14px 14px 14px 40px;/*Para el espacio entre padding del campo sitio web con la imagen de la lupa para escribir después de la imagen de la lupa*/
+		box-sizing: border-box;
+		background-image: url(icono1.png);
+		background-repeat: no-repeat;/*Para no repetir la imagen icono1.png*/
+		transition-delay: 1s;/*Para poder apreciar el crecimiento del campo de la lupa*/
+		transition: width 0.4s ease-in-out;
+	}
+	input[type=url]:focus{
+		width: 100%;
+	}
+	input[type=number]{/*Para todos los input de tipo texto*/
+		width: 100%;/*En relación al elemento que lo contiene (div en este caso)*/
+		border: 2px solid lightgray;
+		border-radius: 4px;/*Para un borde redondeado en los campos de información*/
+		padding: 12px;
+		margin: 6px;
+		box-sizing: border-box;/*Evita que los campos se salgan del ancho del div al incluir padding, border, etc.*/
+	}
+	input[type=number]:focus{/*Para todos los input de tipo texto*/
+		width: 100%;/*En relación al elemento que lo contiene (div en este caso)*/
+		border: 2px solid lightgray;
+		border-radius: 4px;/*Para un borde redondeado en los campos de información*/
+		padding: 12px;
+		margin: 6px;
+		box-sizing: border-box;/*Evita que los campos se salgan del ancho del div al incluir padding, border, etc.*/
+		background-color: gray;
+		color: white;
+	}
+	select{
+		width: 100%;
+		padding: 20px;
+		border-radius: 4px;
+		border: none;
+	}
+	textarea{
+		width: 100%;
+		height: 200px;
+		border: 2px solid lightgray;
+		border-radius: 4px;
+		box-sizing: border-box;
+		resize: none;/*Evita que el usuario cambie de tamaño el campo sugerencias con el cursor*/
+	}
+</style>
+</head>
+<body> 
+	<div><!--Capas o contenedor que engloba una sección específica y le da formato-->
+	<header>
+		<h1>
+			Compras online
+		</h1>
+	</header>
+<section>
+	<form method="post" action="" 
+	enctype="text/plain">
+	<fieldset>
+		<legend>Información del Cliente</legend> 
+		<label for="nombre">
+		Nombre: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Nombre" name="nombre" id="nombre" autofocus/>
+		<label for="ap">
+		Apellido paterno:
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Apellido paterno" name="ap" id="ap"/>
+		<label for="am">
+		Apellido materno:
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Apellido materno" name="am" id="am"/><br/>
+		<label for="user">
+		Nombre de usuario: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Usuario" name="user" id="user"/>
+		<label for="pass">
+		Contraseña:
+		</label><br/>
+		<input type="password" maxlength="25" placeholder="Password" name="pass" id="pass"/>
+	</fieldset>
+	<fieldset>
+		<legend>Datos de facturación</legend> 
+		<label for="calle">
+		Calle: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Usuario" name="usuario" id="usuario"/>
+		<label for="numero">
+		Num:
+		</label><br/>
+		<input type="text" name="numero" id="numero" placeholder="Num. Exterior" maxlength="20" />
+		<label for="col">
+		Colonia: 
+		</label><br/>
+		<input type="text" name="col" id="col" placeholder="Colonia"/>
+		<label for="correo">
+		E-mail: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="E-mail" name="correo" id="correo" />
+		<label for="cp">
+		Código Postal:
+		</label><br/>
+		<input type="number" name="cp" id="cp" placeholder="C.P."/><br/>
+		<label for="rfc">
+		Sitio web: 
+		</label><br/>
+		<input type="text" name="rfc" id="rfc" placeholder="Sitio web"/>
+			<label for="web">Sitio web:</label>
+			<input type="url" name="web" id="web">
+		</fieldset>
+		<fieldset>
+			<legend>Datos del artículo adquirido</legend> 
+		<label for="marca">Tipo</label><br/>
+			<select name="marca" id="marca" size="5">
+			<option>Vestido</option>
+			<option>Pantalón</option>
+			<option>Playera</option>
+			<option>Camisa</option>
+			<option>Chamarra</option>
+			</select>
+
+		<label for="producto">Talla</label><br/>
+		<input type="checkbox"/>Chico<br/>
+		<input type="checkbox"/>Mediano<br/>
+		<input type="checkbox"/>Grande<br/>
+
+					
+		<label for="colores">Selecciona el Color</label><br/>	
+		<input type="color" name="colores" id="colores" placeholder="Color" /><br/><br/>
+
+		<label for="comentarios">Sugerencias:</label>
+		<textarea name="comentarios" id="comentarios"></textarea>
+
+		<input type="submit" name="enviar" id="enviar" value="Enviar datos">
+		<input type="reset" name="borrar" id="borrar" value="Borrar datos">
+		
+		</fieldset>
+	</form>
+
+</section>
+<footer>
+	<h3>
+	&copy; Distribuidor autorizado de productos de calidad.
+	</h3>
+
+</footer>
+</div>
+</body>
+</html>
