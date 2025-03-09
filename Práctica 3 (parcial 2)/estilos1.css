@@ -1,0 +1,50 @@
+body{
+	background-color: beige;
+}
+
+table{/*bordes externos de la tabla*/
+	width: 100%;
+	border: 1px solid lightgray;
+	border-collapse: collapse;/*une los bordes de la tabla*/
+	font-family: arial, verdana, sans-serif;/*tipo de fuentes que puede tener la 
+	página web*/
+	caption-side: top;/*posición del título: arriba(top) o abajo(bottom)*/
+	margin: auto;
+}
+
+th,td{/*bordes internos de la tabla*/
+	border: 1px solid lightgray;
+}
+
+th{
+	padding: 15px;
+}
+
+td{
+	padding: 5px;
+	text-align: justify;
+}
+/*el asterisco es el selector universal*/
+/*pseudoclases sirven para ordenar elementos dentro de otros elementos*/
+
+table tr:nth-child(odd){/*para celdas impares*/
+	background-color: orange;
+}
+
+table tr:nth-child(even){
+	background-color: lightgreen;
+}
+
+tr th{
+	background-color: black;
+	color: white;
+}
+
+table tr:hover{
+	background-color: green;
+	color: white;
+}
+/*para los elementos de a dentro de li
+li a{
+
+}*/
