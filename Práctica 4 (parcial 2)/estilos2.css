@@ -1,0 +1,28 @@
+ul{
+	list-style-type: none;/*Elimina el tipo de lista desordenada al abrir la
+	página en el navegador*/
+	width: 20%;
+	padding: 0;/*Quita el espaciado de las viñetas*/
+	margin: 0;/*Quita los márgenes para que no se separen las celdas de la tabla
+	verde*/
+}
+li a{
+	display: block;/*El hipervínculo se maneja como elemento en bloque
+	(no en línea),además de que permite acceder al link aún clicando en lo verde*/
+	background-color: lightgreen;
+	padding: 12px;
+	text-decoration: none;/*Quita el subrayado de los links de la tabla en verde*/
+	font-family: arial, verdana, sans-serif;
+}
+
+li a:hover{
+	background-color: green;
+	color: white;
+}
+/*Se puede referenciar por id(anteponiendo #), clase(anteponiendo .) y
+palabra clave*/
+li a.activo{/*Colorea por default en verde a la casilla de Inicio en la tabla
+verde*/
+	background-color: darkgreen;
+	color: white;
+}
