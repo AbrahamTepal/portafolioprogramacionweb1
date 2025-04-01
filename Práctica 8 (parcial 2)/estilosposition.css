@@ -1,0 +1,53 @@
+.contenedor{
+	position: relative;/*Ocupa su espacio y sigue el flujo normal
+	de todos los elementos de la página*/
+	background: gray;
+	height: 100px;
+}
+
+.caja1{
+	position: relative;
+	background: orange;
+	height: 50px;
+	left: 10px;/*Lo recorre desde la izquierda*/
+}
+
+.caja2{
+	position: absolute;/*Permite mover el elemento sin seguir el flujo de todos los
+	demás elementos en el mismo elemento*/
+	background: blue;
+	height: 150px;
+	width: 150px;
+	left: 50px;
+	top: 25px;
+	z-index: -1;/*valores mayores quedan más al frente con respecto a los demás elementos*/
+}
+
+.caja3{
+	position: absolute;
+	background: pink;
+	width: 125px;
+	height: 125px;
+	left: 80px;
+	top: 40px;
+	z-index: 2;
+}
+
+.caja4{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: green;
+	top: 55px;
+	left: 155px;
+	z-index: 3;
+}
+
+.caja5{
+	position: fixed;/*No se mueve*/
+	left: 200px;
+	top: 250px;
+	width: 100px;
+	border: 2px solid red;
+	z-index: 4;
+}
