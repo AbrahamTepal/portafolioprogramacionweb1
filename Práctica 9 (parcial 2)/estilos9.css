@@ -1,0 +1,46 @@
+.contenedor{/*Algunas propiedades de border no funcionan
+en ciertos navegadores*/
+text-align: center;
+	border: 1px solid gray;
+	border-radius: 10px 20px 40px 30px;
+	-moz-border-radius: 10px 20px 40px 30px;
+	-webkit-border-radius: 10px 20px 40px 30px;
+	box-shadow: rgb(0, 0, 250) 5px 5px 15px inset;/*Posición horizontal
+	y luego vertical (valores positivos y negativos coloca la sombra
+	ya sea a la derecha o izquierda o arriba y abajo*/
+	-moz-box-shadow: rgb(0, 0, 250) 5px 5px 15px inset;
+	-webkit-box-shadow: rgb(0, 0, 250) 5px 5px 15px inset;
+	/*inset aplica la sombra dentro del elemento*/
+}
+
+.t1{
+	font-family: arial, verdana, sans-serif;
+	font-size: 18px;
+	text-shadow: rgb(210, 0, 0) -5px -5px 10px;/*Distancia horizontal
+	y luego vertical (valores positivos y negativos coloca la sombra
+	el texto ya sea a la derecha o izquierda o arriba y abajo. Último
+	valor el grado de difuminación*/
+	-moz-text-shadow: rgb(210, 0, 0) -5px -5px 10px;
+	-webkit-text-shadow: rgb(210, 0, 0) -5px -5px 10px;
+}
+
+.contenedor2{
+	border: 1px solid gray;
+	margin: 20px;
+	/*Para degradado lineal*/
+	background: linear-gradient(45deg, white, red);/*Posición inicial
+	del degradado (palabras o grados sexagesimales),
+	color inicial, color final*/
+	background: -moz-linear-gradient(45deg, white, red);
+	background: -webkit-linear-gradient(45deg, white, red);
+}
+
+.contenedor3{
+	border: 1px solid gray;
+	margin: 20px;
+	/*Para degradado radial (circle o ellipse)*/
+	background: radial-gradient(left, ellipse, white 10%, lightgreen 50%);
+	/*Posición inicial del degradado, forma, color inicial, color final*/
+	background: -moz-radial-gradient(left, ellipse, white 10%, lightgreen 50%);
+	background: -webkit-radial-gradient(left, ellipse, white 10%, lightgreen 50%);
+}
