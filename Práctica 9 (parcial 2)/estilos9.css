@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.absolute-unit, .relative-unit {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    text-align: center;
+}
+
+.px {
+    width: 100px;
+    height: 30px;
+}
+
+.cm {
+    width: 2cm;
+    height: 1cm;
+}
+
+.in {
+    width: 1in;
+    height: 1in;
+}
+
+.pt{
+    width: 30pt;
+    height: 25pt;
+}
+
+.mm{
+    width: 60mm;
+    height: 50mm;
+}
+
+.pc{
+    width: 5pc;
+    height: 3pc;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.rem {
+    font-size: 2rem;
+}
+
+.vw {
+    width: 50vw;
+    height: 30px;
+}
+
+.vh {
+    height: 50vh;
+    width: 100px;
+}
+
+.porcentaje {
+    width: 50%;
+    height: 30px;
+}
+
+.vmin {
+    width: 10vmin;
+    height: 10vmin;
+}
+
+.vmax {
+    width: 10vmax;
+    height: 10vmax;
+}
+
+.ex {
+    font-size: 5ex;
+    height: 5ex;
+}
+
+.ch {
+    font-size: 10ch;
+    height: 10ch;
+}
+
+.relative {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    text-align: center;
+}

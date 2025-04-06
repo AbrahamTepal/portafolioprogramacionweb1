@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Unidades de Medida en CSS</title>
+    <link rel="stylesheet" type="text/css" href="estilos9.css">
+</head>
+<body>
+    <header>
+        <h1>Unidades de Medida en CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>¿Qué son y para qué sirven?</h2>
+            <p>Son herramientas que permiten el definir el tamaño de elementos, márgenes, padding, fuentes, entre otros. Estas unidades se dividen en dos categorías principales: relativas y absolutas.</p>
+            <p>Fuente: <a href="https://www.bing.com/ck/a?!&&p=7152bb079964f0abf42f817c5106daae4a3c63e38835b7cc99189b130006dc0fJmltdHM9MTc0MzgxMTIwMA&ptn=3&ver=2&hsh=4&fclid=3ab4deed-44e1-6f33-25a1-cb2b45986e39&psq=qu%C3%A9+son+las+unidades+de+medida+relativas+y+absolutas+en+css&u=a1aHR0cHM6Ly9kZXNhcnJvbGxvd2ViLmNvbS9hcnRpY3Vsb3MvdW5pZGFkZXMtbWVkaWRhLWNzcy1yZWxhdGl2YXMtYWJzb2x1dGFzLmh0bWw&ntb=1">Unidades de medida en CSS: relativas y absolutas - Desarrollo web</a></p>
+        </section>
+        <section>
+            <h2>Unidades Absolutas</h2>
+            <p>Tienen un tamaño fijo y no cambian en función de otros elementos o del entorno. Son útiles cuando necesitas un control preciso sobre el tamaño de los elementos.</p>
+            <h3>Píxeles (px)</h3>
+            <p>Es la unidad más pequeña de una pantalla. Por ejemplo:</p>
+            <div class="absolute-unit px">100px (píxeles)</div>
+            <h3>Centímetros (cm)</h3>
+            <p>La centésima parte de un metro. Por ejemplo:</p>
+            <div class="absolute-unit cm">2cm (centímetros)</div>
+            <h3>Pulgadas (in)</h3>
+            <p>Equivale a 2.54 cm. Por ejemplo:</p>
+            <div class="absolute-unit in">1in (pulgada)</div>
+            <h3>Puntos (pt)</h3>
+            <p>Equivale a 1/72 de una pulgada. Por ejemplo:</p>
+            <div class="absolute-unit pt">30pt (punto)</div>
+            <h3>Pica (pc)</h3>
+            <p>Equivalente a 12 pt. Por ejemplo:</p>
+            <div class="absolute-unit pc">5pc (pica)</div>
+            <h3>Milímetros (mm)</h3>
+            <p>La milésima parte de un metro. Por ejemplo:</p>
+            <div class="absolute-unit mm">60mm (milímetro)</div>
+        </section>
+        <section>
+            <h2>Unidades Relativas</h2>
+            <p>Se basan en el tamaño de otros elementos o del entorno, lo que las hace más flexibles y adaptables a diferentes dispositivos y tamaños de pantalla.
+            </p>
+            <h3>em (em)</h3>
+            <p>Relativa al tamaño de la fuente del elemento padre. Por ejemplo, si el tamaño de la fuente del elemento padre es 16px, 2em será igual a 32px:</p>
+            <div class="relative-unit em">2em (32px)</div>
+            <h3>rem (root em)</h3>
+            <p>Relativa al tamaño de la fuente del elemento raíz (generalmente el html). Por ejemplo, si el tamaño de la fuente del html es 16px, 2rem será igual a 32px:</p>
+            <div class="relative-unit rem">2rem (32px)</div>
+            <h3>vw (viewport width)</h3>
+            <p>Relativa al 1% del ancho de la ventana gráfica (viewport width). Por ejemplo, 50vw será igual al 50% del ancho de la ventana:</p>
+            <div class="relative-unit vw">50vw (50% del ancho de la ventana)</div>
+            <h3>vh (viewport height)</h3>
+            <p>Relativa al 1% de la altura de la ventana gráfica (viewport height). Por ejemplo, 50vh será igual al 50% de la altura de la ventana:</p>
+            <div class="relative-unit vh">50vh (50% de la altura de la ventana)</div>
+            <h3>Porcentaje (%)</h3>
+            <p>Se utiliza para definir dimensiones basadas en el tamaño del elemento contenedor. Es excelente para diseños flexibles y responsivos. Por ejemplo:</p>
+            <div class="relative porcentaje">50% del ancho del contenedor</div>
+            <h3>vmin (viewport minimum)</h3>
+            <p>Representa el 1% de la dimensión más pequeña del viewport (ya sea el ancho o la altura). Esto es ideal para garantizar que los elementos mantengan una proporción adecuada independientemente de la orientación de la pantalla. Por ejemplo:</p>
+            <div class="relative vmin">10vmin (10% del menor entre ancho/alto del viewport)</div><br/><br/><br/>
+            <h3>vmax (viewport maximum)</h3>
+            <p>Es el 1% de la dimensión más grande del viewport (ya sea el ancho o la altura). Perfecto para elementos que necesitas que crezcan o se adapten al tamaño máximo de la pantalla visible. Por ejemplo:</p>
+            <div class="relative vmax">10vmax (10% del mayor entre ancho/alto del viewport)</div>
+            <h3>ex</h3>
+            <p>Está basada en la altura de la letra "x" de la fuente actual. Útil para ajustar el tamaño de los elementos de manera proporcional al texto, especialmente en casos donde la relación entre las letras importa.</p>
+            <div class="relative ex">5ex (proporcional a la altura de la letra "x")</div>
+            <h3>ch (character)</h3>
+            <p>Equivale al ancho del carácter "0" en la fuente actual. Es ideal para alinear texto o crear elementos que mantengan proporciones específicas basadas en el ancho de los caracteres.</p>
+            <div class="relative ch">10ch (10 veces el ancho del carácter "0")</div>
+        </section>
+    </main>
+</body>
+</html>
