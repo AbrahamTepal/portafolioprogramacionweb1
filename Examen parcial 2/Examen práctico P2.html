@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Examen práctico Parcial 2</title>
+ 	<link rel="stylesheet" type="text/css" href="estilosexamen2.css">
+</head>
+<body>
+	 <h1>Examen práctico Parcial 2</h1>
+	 <h2>Abraham Guillermo Tepal Ramírez</h2>
+	 <div class="mostrar">
+	 	<button id="mostrar" onmouseover="ocultarGaleria()" onmouseout="mostrarGaleria()">Galería de imágenes</button>
+	 	<script>
+    		function ocultarGaleria() {
+        		const galeria = document.querySelector('.galeria');
+        		// Selecciona el contenedor con clase "galeria"
+        		galeria.style.display = 'none';
+        		// Oculta la galería cambiando su estilo "display" a "none"
+    		}
+
+		    function mostrarGaleria() {
+		        const galeria = document.querySelector('.galeria');
+		        // Selecciona el contenedor con clase "galeria"
+		        galeria.style.display = 'flex';
+		        // Muestra la galería cambiando su estilo "display" a "flex"
+		    }
+		</script>
+	 </div>
+	 <div class="galeria">
+		 <div class="imagen">
+		 <img src="imagenes/imagen1.jpg" class="Paisaje" alt="Paisaje 1">
+		 </div>
+		 <div class="imagen">
+		 <img src="imagenes/imagen2.jpg" class="Paisaje" alt="Paisaje 2">
+		 </div>
+		 <div class="imagen">
+		 <img src="imagenes/imagen3.jpg" class="Paisaje" alt="Paisaje 3">
+		 </div>
+		 <div class="imagen">
+		 <img src="imagenes/imagen4.jpg" class="Paisaje" alt="Paisaje 4">
+		 </div>
+	 </div>
+</body>
+</html>
