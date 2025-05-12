@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica 3 | Parcial 3</title>
+    <link rel="stylesheet" type="text/css" href="estilosformapi.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <script type="text/javascript" src="api.js" defer></script> <!-- Se carga correctamente -->
+</head>
+<body>
+    <h1>Formulario de diagnóstico: Cultura General</h1>
+    <form id="diagnosticoForm">
+        <!-- Pregunta 1 -->
+        <p>1. ¿Cuál es el río más largo del mundo?</p>
+        <input type="radio" name="pregunta1" value="amazonas">Amazonas<br>
+        <input type="radio" name="pregunta1" value="nilo">Nilo<br>
+        <input type="radio" name="pregunta1" value="mississippi">Mississippi<br>
+        <input type="radio" name="pregunta1" value="yangtse">Yangtsé<br>
+
+        <!-- Pregunta 2 -->
+        <p>2. ¿Quién pintó "La última cena"?</p>
+        <input type="radio" name="pregunta2" value="picasso">Pablo Picasso<br>
+        <input type="radio" name="pregunta2" value="vangogh">Vincent van Gogh<br>
+        <input type="radio" name="pregunta2" value="davinci">Leonardo da Vinci<br>
+        <input type="radio" name="pregunta2" value="rembrandt">Rembrandt<br>
+
+        <!-- Pregunta 3 -->
+        <p>3. ¿Cuántos planetas hay en el sistema solar?</p>
+        <input type="radio" name="pregunta3" value="7">7<br>
+        <input type="radio" name="pregunta3" value="8">8<br>
+        <input type="radio" name="pregunta3" value="9">9<br>
+        <input type="radio" name="pregunta3" value="10">10<br>
+
+        <p>4. ¿En qué país se encuentra la Torre Eiffel?</p>
+        <input type="radio" name="pregunta4" value="francia">Francia<br>
+        <input type="radio" name="pregunta4" value="italia">Italia<br>
+        <input type="radio" name="pregunta4" value="alemania">Alemania<br>
+        <input type="radio" name="pregunta4" value="españa">España<br>
+
+        <p>5. ¿Cuál es el océano más grande del mundo?</p>
+        <input type="radio" name="pregunta5" value="atlantico">Atlántico<br>
+        <input type="radio" name="pregunta5" value="pacifico">Pacífico<br>
+        <input type="radio" name="pregunta5" value="indico">Índico<br>
+        <input type="radio" name="pregunta5" value="artico">Ártico<br>
+
+        <p>6. ¿Quién escribió "Don Quijote de la Mancha"?</p>
+        <input type="radio" name="pregunta6" value="cervantes">Miguel de Cervantes<br>
+        <input type="radio" name="pregunta6" value="gabo">Gabriel García Márquez<br>
+        <input type="radio" name="pregunta6" value="shakespeare">William Shakespeare<br>
+        <input type="radio" name="pregunta6" value="becquer">Gustavo Adolfo Bécquer<br>
+
+        <p>7. ¿Cuántos continentes hay en la Tierra?</p>
+        <input type="radio" name="pregunta7" value="5">5<br>
+        <input type="radio" name="pregunta7" value="6">6<br>
+        <input type="radio" name="pregunta7" value="7">7<br>
+        <input type="radio" name="pregunta7" value="8">8<br>
+
+        <p>8. ¿Cuál es la capital de Japón?</p>
+        <input type="radio" name="pregunta8" value="osaka">Osaka<br>
+        <input type="radio" name="pregunta8" value="tokio">Tokio<br>
+        <input type="radio" name="pregunta8" value="nagoya">Nagoya<br>
+        <input type="radio" name="pregunta8" value="kioto">Kioto<br>
+
+        <p>9. ¿Qué gas respiramos principalmente?</p>
+        <input type="radio" name="pregunta9" value="co2">Dióxido de carbono (CO₂)<br>
+        <input type="radio" name="pregunta9" value="oxigeno">Oxígeno<br>
+        <input type="radio" name="pregunta9" value="nitrógeno">Nitrógeno<br>
+        <input type="radio" name="pregunta9" value="helio">Helio<br>
+
+        <p>10. ¿Cuál es el metal más ligero?</p>
+        <input type="radio" name="pregunta10" value="oro">Oro<br>
+        <input type="radio" name="pregunta10" value="litio">Litio<br>
+        <input type="radio" name="pregunta10" value="aluminio">Aluminio<br>
+        <input type="radio" name="pregunta10" value="hierro">Hierro<br>
+
+        <button type="submit">Enviar respuestas</button><br/>
+        <div id="resultado"></div>
+    </form>
+    <div id="grafico" style="width: 600px; height: 400px;"></div>
+    <script type="text/javascript" src="grafico.js" defer></script>
+    <button id="descargarPDF">Descargar PDF</button>
+</body>
+</html>
