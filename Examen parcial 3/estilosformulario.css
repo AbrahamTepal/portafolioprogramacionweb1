@@ -1,0 +1,71 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: orange;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal */
+h1 {
+    color: #333;
+}
+
+/* Formulario */
+form {
+    width: 300px; /* Define un ancho fijo */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Etiquetas */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Campos de entrada */
+input[type="number"], select {
+    width: 100%; /* Hace que el campo se ajuste al contenedor */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Evita que el padding afecte el tamaño */
+}
+
+/* Botón */
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor del resultado */
+#resultadoContainer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
